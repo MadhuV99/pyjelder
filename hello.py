@@ -28,18 +28,19 @@ print("In ReVeRsE case: " + "Happy X'mas. Howdy folks!".swapcase())
 print("Capitalized: " + "Happy X'mas. Howdy folks!".capitalize()) # First letter of the string is capitalized
 print("In Camel case: " + "Happy X'mas. Howdy folks!".title()) # First letter of every word is capitalized
 
-
-
+# List
 print(".".center(50,"-"))
 first_names = ["John", "Tom", "Rina"]
 print(first_names)
 print(first_names[1])
 
+# Tuple
 print(".".center(50,"-"))
 FIRST_NAMES = ("Sam", "Nick", "Gina")
 print(FIRST_NAMES)
 print(FIRST_NAMES[1])
 
+# Dictionary
 print(".".center(50,"-"))
 best_friends = {
     "John" : "Sam",
