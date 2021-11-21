@@ -27,6 +27,7 @@ print("In lower case: " + "Happy X'mas. Howdy folks!".lower())
 print("In ReVeRsE case: " + "Happy X'mas. Howdy folks!".swapcase())
 print("Capitalized: " + "Happy X'mas. Howdy folks!".capitalize()) # First letter of the string is capitalized
 print("In Camel case: " + "Happy X'mas. Howdy folks!".title()) # First letter of every word is capitalized
+print("Split on spaces: ", "Happy X'mas. Howdy folks!".split(' '))
 
 # List
 print(".".center(50,"-"))
