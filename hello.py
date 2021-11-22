@@ -34,7 +34,8 @@ print("Split on spaces: ", "Happy X'mas. Howdy folks!".split(' '))
 # math functions
 print("math functions".center(50,"-"))
 print(abs(-25.67)) # The absolute value of the parameter
-print(cmp(2, 3)) # if equal, returns 0. if first numeber is less than second parameter, outputs a -ve value, else outputs +ve value.
+print(min(1, 2, 3)) # the minimum value is output 
+print(max(1, 2, 3)) # the maximum value is output 
 print(pow(2, 3)) # The first parameter raised to the power of the second paraemter
 print(round(10.0 / 3, 4)) # round output to 4 decimal places; ensure at least one of the operands is a float! 
 
@@ -42,7 +43,7 @@ print(round(10.0 / 3, 4)) # round output to 4 decimal places; ensure at least on
 #casting
 print("casting".center(50,"-"))
 print(int(10 / 3)) # convert the decimal result to integer type
-print(float(10 / 5)) # convert the integer result to float(decimal) type
+print(float(10 * 3)) # convert the integer result to float(decimal) type
 print("30 degrees is " + str(30 * (3.14 / 180)) + " radians") # convert the float expression result to string type and concatenate
 print(bin(24)) # convert from decimal to binary. Output binary number begins with 0b.
 print(oct(24)) # convert from decimal to octal. Output octal number has a leading 0.
@@ -53,8 +54,32 @@ print(hex(24)) # convert from decimal to hexadecimal. Output hexadecimal number 
 # List
 print("List".center(50,"-"))
 first_names = ["John", "Tom", "Rina"]
+print(first_names) # prints the entire list
+print(len(first_names)) # outputs the number of elements in the list
+print(first_names[1]) # outputs the list element in position 1
+first_names[1] = "Nick" # Overwrite the element in position 1
+print(first_names[len(first_names) - 1]) # outputs the last element n the list
+del first_names[1] # deletes the list element at position 1
 print(first_names)
-print(first_names[1])
+duplicate_names = first_names[:] # Returns a copy of the first_names list
+print(duplicate_names)
+del duplicate_names[:] # Removes all the elements from the list first_names
+print(duplicate_names)
+
+# List functions
+print("List Functions".center(50,"-"))
+first_names = ["John", "Tom", "Rina"]
+first_names.append("Mario") # appends an element to the end of the list
+print(first_names)
+first_names = ["John", "Tom", "Rina", "Tom", "Sam", "Rina", "Tom"]
+print(first_names.count('Tom')) # Returns the number of elements with the value 'Tom'
+print(first_names.index('Rina')) # Returns the index of the first element with the value 'Rina'
+more_names = ["Jerry", "Perry", "Terry"]
+first_names.extend(more_names) # Adds the elements of list more_names to the end of the list first_names
+print(first_names)
+duplicate_names = first_names.copy() # Returns a copy of the first_names list
+print(duplicate_names)
+duplicate_names.clear() # Removes all the elements from the list duplicate_names
 
 # Tuple
 print("Tuple".center(50,"-"))
