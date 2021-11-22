@@ -74,12 +74,22 @@ print(first_names)
 first_names = ["John", "Tom", "Rina", "Tom", "Sam", "Rina", "Tom"]
 print(first_names.count('Tom')) # Returns the number of elements with the value 'Tom'
 print(first_names.index('Rina')) # Returns the index of the first element with the value 'Rina'
+first_names.remove('Rina') # Removes the first element with the value 'Rina'
+print(first_names)
+first_names.insert(2, 'Kim') # Adds element 'Kim' at the index position 2
+print(first_names)
+first_names.pop(2) # pops (removes and outputs) the element at index position 2
+print(first_names)
 more_names = ["Jerry", "Perry", "Terry"]
 first_names.extend(more_names) # Adds the elements of list more_names to the end of the list first_names
 print(first_names)
 duplicate_names = first_names.copy() # Returns a copy of the first_names list
 print(duplicate_names)
 duplicate_names.clear() # Removes all the elements from the list duplicate_names
+first_names.reverse() # Reverses the order of the list first_names
+print(first_names)
+first_names.sort() # Sorts the list first_names
+print(first_names)
 
 # Tuple
 print("Tuple".center(50,"-"))
