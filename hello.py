@@ -2,13 +2,16 @@
 import os
 os.system('clear')
 
-print("print() function".center(50,"-"))
-print("Hello World!")
+# Built-in Functions
+print("Built-in Functions".center(50,"-"))
+print("print() function".center(50,"-")) # Like in mathematics, the concept of a function is fundamental to understanding Data Science, or any science for that matter.
+print("Hello World!") # Print is the name of the built-in python function. built-in, because it is already defined and declared for you to use, call or invoke. 'Hello World' is the arguement you pass to the function. The output is what this function does.  
 
 # Variables
 print("Variables".center(50,"-"))
-first_name = "John" # variable naming convention; case sensitive
-print(first_name)
+first_name = "John" # a variable is a named container to hold a value, like a customer 'sname or product's cost.
+print(first_name) # variable naming conventions are: case sensitive, underscore as word delimiter, all CAPS for constant values that will stay constant throuout the program.  
+
 
 # String Properties
 print("String Properties".center(50,"-"))
@@ -38,7 +41,6 @@ print(min(1, 2, 3)) # the minimum value is output
 print(max(1, 2, 3)) # the maximum value is output 
 print(pow(2, 3)) # The first parameter raised to the power of the second paraemter
 print(round(10.0 / 3, 4)) # round output to 4 decimal places; ensure at least one of the operands is a float! 
-
 
 #casting
 print("casting".center(50,"-"))
@@ -93,9 +95,27 @@ print(first_names)
 
 # Tuple
 print("Tuple".center(50,"-"))
-FIRST_NAMES = ("Sam", "Nick", "Gina")
+FIRST_NAMES = ("Rina", "Tina", "Gina")
 print(FIRST_NAMES)
-print(FIRST_NAMES[1])
+print(FIRST_NAMES[1]) # Output is Tina, NOT Rina. Indexing starts with 0
+LAST_NAMES = ("Green", "Brown", "Gray")
+print(LAST_NAMES)
+NEW_NAMES = FIRST_NAMES[0:2] + LAST_NAMES[1:1] # Indexing and slicing rules are the same for tuples too.
+print(NEW_NAMES)
+print(type(LAST_NAMES[1:1])) # sliced tuples are tuples too
+print(type(LAST_NAMES[1])) # An indexed tuple element is the corresponding element's data type. 
+ALL_NAMES = (FIRST_NAMES[0], LAST_NAMES[0]) \
+            + (FIRST_NAMES[1], LAST_NAMES[1]) \
+            + (FIRST_NAMES[2], LAST_NAMES[2]) # Note the line continuation character "backslash". 
+print(ALL_NAMES) # concatenating corresponding elements from the tuples FIRST_NAMES and LAST_NAMES and assigning the result to the new tuple ALL_NAMES
+print(tuple(zip(FIRST_NAMES, LAST_NAMES))) # more slick combination by culling one corresponding item from each of the two tuples. Note use of the TUPLE function to convert the zip object back to a tuple
+
+
+# Tuple Functions
+print("Tuple Functions".center(50,"-"))
+full_name = ("Rin", "Tin", "Tin")
+print(full_name.count('Tin')) # Returns the number of elements with the value 'Tin'
+print(full_name.index('Tin')) # Returns the index of the first element with the value 'Tin'
 
 # Dictionary
 print("Dictionary".center(50,"-"))
@@ -105,7 +125,26 @@ best_friends = {
     "Rina" : "Gina"
 }
 print(best_friends) # No guaranteed order
-print(best_friends["Tom"]) 
+print(best_friends["John"]) 
+best_friends["Tom"] = "Tina" # Update the value to 'Tina" of the key element "Tom" in the dictionary best_friends
+print(best_friends) # No guaranteed order
+del best_friends["Rina"] # Delete the key value pair for the key "Rina" from the dictionary best_friends 
+print(best_friends) # No guaranteed order
+
+# Dictionary Functions
+print("Dictionary Functions".center(50,"-"))
+best_friends = {
+    "John" : "Sam",
+    "Tom" : "Nick",
+    "Rina" : "Gina"
+}
+print(best_friends) # No guaranteed order
+best_friends.update({"Jack" : "Jill"})
+print(best_friends) # No guaranteed order
+
+
+
+
 
 
 
