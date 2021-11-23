@@ -141,10 +141,14 @@ best_friends = {
 print(best_friends) # No guaranteed order
 best_friends.update({"Jack" : "Jill"})
 print(best_friends) # No guaranteed order
-
-
-
-
+jersey_numbers = {
+    10 : "Diego Maradonna",
+    12 : "Tom Brady",
+    23 : "Michael Jordan",
+    1 : "Muhammad Ali",
+    45: "Michael Jordan", # Only the key need be unique
+}
+print(jersey_numbers) # Dictionary keys may be strings or integers
 
 
 
