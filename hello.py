@@ -12,7 +12,6 @@ print("Variables".center(50,"-"))
 first_name = "John" # a variable is a named container to hold a value, like a customer 'sname or product's cost.
 print(first_name) # variable naming conventions are: case sensitive, underscore as word delimiter, all CAPS for constant values that will stay constant throuout the program.  
 
-
 # String Properties
 print("String Properties".center(50,"-"))
 print(len("Edgar Rice Burroughs"))
@@ -51,6 +50,10 @@ print(bin(24)) # convert from decimal to binary. Output binary number begins wit
 print(oct(24)) # convert from decimal to octal. Output octal number has a leading 0.
 print(hex(24)) # convert from decimal to hexadecimal. Output hexadecimal number begins with 0x.
 
+# Operators
+print("Operators".center(50,"-"))
+param = "My cat %s has %d lives and weighs %.2f lbs" % ("Nino", 9, 43.5/6.5)
+print(param) # %s is place holder for a string, %d is place holder for an integer, and %f is place holder for a float number
 
 
 # List
