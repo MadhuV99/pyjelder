@@ -18,7 +18,7 @@ def return_something_function(first_number, second_number):
     print("Message from the User Defined Function return_something_function:")
     print("You passed in %f first, and %f next." % (first_number, second_number)) 
     result = first_number + second_number
-    return result # function returning result
+    return result # flast line of function returning result
 
 returned_thing = return_something_function(4, 5) 
 print("Thing returned by return_something_function: ", returned_thing)
