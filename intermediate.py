@@ -1,3 +1,7 @@
+# Clear the screen
+import os
+os.system('clear')
+
 # Comparison Operator
 print("Comparison Operator".center(50,"-"))
 print([1,2,3, "Jack"] == [1,2,3,"Jack"])
