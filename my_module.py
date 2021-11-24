@@ -30,7 +30,6 @@ def test_functions():
     print("Swapped Arguements:", arg_one, arg_two)
 
 
-test_functions()
-
-
+if __name__ == "__main__":
+    test_functions()
 
