@@ -24,12 +24,13 @@ def test_functions():
     the_sum = my_arithmetic("2 + 3")
     print(the_sum)
 
+    arg_one = "Before"
+    arg_two = "After"
+    arg_one, arg_two = my_swapper(arg_one, arg_two)
+    print("Swapped Arguements:", arg_one, arg_two)
+
 
 test_functions()
-arg_one = "Before"
-arg_two = "After"
-arg_one, arg_two = my_swapper(arg_one, arg_two)
-print("Swapped Arguements:", arg_one, arg_two)
 
 
 
