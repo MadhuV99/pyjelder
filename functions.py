@@ -14,16 +14,16 @@ def return_nothing_function(first_parameter, second_parameter): # function decla
 
 return_nothing_function("first_argument", "second_argument") # calling or invoking the function return_nothing_function, passing 2 arguement
 
-def return_something_function(first_number, second_number):
+def return_something_function(first_number, second_number, unused_parameter):
     print("Message from the User Defined Function return_something_function:")
     print("You passed in %f first, and %f next." % (first_number, second_number)) 
     result = first_number + second_number
-    return result # flast line of function returning result
+    return result # last line of function returning result
 
-returned_thing = return_something_function(4, 5) 
+returned_thing = return_something_function(4, 5, 6) 
 print("Thing returned by return_something_function: ", returned_thing)
 
 a_num = 23.45
 b_num = 45.67
-returned_thing = return_something_function(a_num, b_num) 
+returned_thing = return_something_function(a_num, b_num, 'unused argument') 
 print("Thing returned by return_something_function: ", returned_thing)
